@@ -1,0 +1,11 @@
+/Users/karimbatbouta/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PavlovsPawns/Source/PavlovsPawns.dll
+/Users/karimbatbouta/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PavlovsPawns/Source/PavlovsPawns.pdb
+/Users/karimbatbouta/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PavlovsPawns/Source/0Harmony.dll
+/Users/karimbatbouta/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PavlovsPawns/Source/0Harmony.xml
+/Users/karimbatbouta/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PavlovsPawns/Assemblies/PavlovsPawns.dll
+/Users/karimbatbouta/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PavlovsPawns/Assemblies/PavlovsPawns.pdb
+/Users/karimbatbouta/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PavlovsPawns/Source/obj/Debug/PavlovsPawns.csprojAssemblyReference.cache
+/Users/karimbatbouta/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PavlovsPawns/Source/obj/Debug/PavlovsPawns.csproj.CoreCompileInputs.cache
+/Users/karimbatbouta/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PavlovsPawns/Source/obj/Debug/PavlovsPawns.csproj.CopyComplete
+/Users/karimbatbouta/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PavlovsPawns/Source/obj/Debug/PavlovsPawns.dll
+/Users/karimbatbouta/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PavlovsPawns/Source/obj/Debug/PavlovsPawns.pdb
