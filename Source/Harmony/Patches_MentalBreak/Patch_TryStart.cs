@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
 using HarmonyLib;
-using Pavlovs.DataTypes;
+using Pavlovs.Memories;
+using Pavlovs.Data;
 using Pavlovs.Tools;
 using Verse;
 using Verse.AI;
@@ -12,6 +13,11 @@ namespace Pavlovs.HPatches.HMentalBreak
     [HarmonyPatch(nameof(MentalBreakWorker.TryStart))]
     public static class Patch_TryStart
     {
+        public static void Prefix(Pawn pawn, string reason, bool causedByMood, bool __result, MentalBreakWorker __instance)
+        {
+            Logging.Warning("" + __instance.def);
+        }
+
         public static void Postfix(Pawn pawn, string reason, bool causedByMood, bool __result, MentalBreakWorker __instance)
         {
             if (!__result) { return; }
@@ -23,10 +29,10 @@ namespace Pavlovs.HPatches.HMentalBreak
                 {
                     if (unit.nodes.Last().t_0 == t_0) { return; }
                 }
-                unit.nodes.Add(new MemoryUnit.Memory
+                unit.nodes.Add(new Memories.Memory
                 {
                     t_0 = t_0,
-                    mentalStateDef = __instance.def.mentalState
+                    eventDef = __instance.def.mentalState
                 });
             }
         }

@@ -1,5 +1,7 @@
 ﻿using System;
-using Pavlovs.DataTypes;
+using HugsLib;
+using Pavlovs.Memories;
+using Pavlovs.Data;
 using Pavlovs.Tools;
 using Verse;
 
@@ -16,7 +18,7 @@ namespace Pavlovs.Core.Components
 
         }
 
-        public override void CompTickRare()
+        public void CompCall()
         {
             if (this.memoryUnit == null) { return; }
 
@@ -25,8 +27,8 @@ namespace Pavlovs.Core.Components
                 this.memoryUnit.Create();
             }
 
-            this.memoryUnit.DoUpdate();
-            this.memoryUnit.DoTick();
+            this.memoryUnit.DoNodesUpdate();
+            this.memoryUnit.DoTrackingUpdate();
         }
 
 
@@ -57,6 +59,8 @@ namespace Pavlovs.Core.Components
         {
             base.PostSpawnSetup(respawningAfterLoad);
             this.Register();
+
+            HugsLibController.Instance.DistributedTicker.RegisterTickability(CompCall, Prefs.PavlovsPawnsPrefs.MessureInterval, parent);
         }
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
