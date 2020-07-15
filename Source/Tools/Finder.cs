@@ -1,5 +1,6 @@
 ﻿using System;
-using Pavlovs.Core.Components;
+using Pavlovs.Core;
+using Pavlovs.Utilities;
 
 namespace Pavlovs.Tools
 {
@@ -7,6 +8,7 @@ namespace Pavlovs.Tools
     {
         public static readonly string packageID = "krkr.PavlovsPawns";
 
-        public static GameComponent_MemoryTracker GameMemories { get; internal set; }
+        public static ScribeManager ScribeManager;
+        internal static WorldComponent_PawnTracker PawnTracker;
     }
 }

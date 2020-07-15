@@ -3,14 +3,14 @@
     <Operation Class="PatchOperationSequence">
         <operations>
             <li Class="PatchOperationTest">
-                <xpath>Defs/ThingDef[@Name="BasePawn"]/comps/li[compClass="Pavlovs.Core.Components.ThingComp_MemoryComp"]</xpath>
+                <xpath>Defs/ThingDef[@Name="BasePawn"]/comps/li[compClass="Pavlovs.Core.Trackers.ThingComp_PawnTrack"]</xpath>
                 <success>Invert</success>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[@Name="BasePawn"]/comps</xpath>
                 <value>
                     <li>
-                        <compClass>Pavlovs.Core.Components.ThingComp_MemoryComp</compClass>
+                        <compClass>Pavlovs.Core.Trackers.ThingComp_PawnTrack</compClass>
                     </li>
                 </value>
             </li>
